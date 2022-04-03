@@ -1,0 +1,39 @@
+package logicadenegocio;
+import java.util.Date;
+
+/**
+ * Esta es la clase de la factura va tener los detalles de la compra
+ * 
+ * @author Derrick Acosta
+ * @version 03/04/2022
+ */
+public class Factura
+{
+    private int catidadFactura;
+    private String nombre;
+    private String cedulaJuridica;
+    private String direccion;
+    private int telefono;
+    private Date fechaFactura;
+    private Date horaFactura;
+    private int numeroFactura;
+    
+    public Factura(String pNombre, String pCedulaJuridica, String pDireccion, int pTelefono, Date pFechaFactura, Date pHoraFactura,int pNumeroFactura, Empleado pCajero, Empleado pVendedor){
+        nombre=pNombre;
+        cedulaJuridica=pCedulaJuridica;
+        direccion=pDireccion;
+        telefono=pTelefono;
+        fechaFactura=pFechaFactura;
+        horaFactura=pHoraFactura;
+        numeroFactura=pNumeroFactura;
+    }
+    public double calcularSubTotal(){
+        
+    }
+    public double calcularImpuestoVenta(double subTotal){
+        
+    }
+    public String toString(){
+        return;
+    }
+}
