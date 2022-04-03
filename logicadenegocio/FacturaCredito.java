@@ -5,8 +5,7 @@ package logicadenegocio;
  * @author 
  * @version
  */
-public class FacturaCredito
-{
+public class FacturaCredito{
   private int cantidadMeses;
   private double interesMensual;
   private double cuotaMensual;
@@ -17,7 +16,5 @@ public class FacturaCredito
     cuotaMensual=pCuotaMensual;
     subTotal=pSubTotal;
   }
-  public String toString(){
-    return;
-  }
+ 
 }

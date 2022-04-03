@@ -1,35 +1,23 @@
 package logicadenegocio;
 
-
-/**
- * Write a description of class Cliente here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Cliente
-{
-  // instance variables - replace the example below with your own
-  private int x;
+public class Cliente{
+  private String nombre;
+  private String direccion;
+  private String telefono;
+  private String cedula;
   
-  /**
-   * Constructor for objects of class Cliente
-   */
-  public Cliente()
-  {
-    // initialise instance variables
-    x = 0;
+  Cliente(String pNombre, String pDireccion, String pTelefono, String pCedula){
+    nombre = pNombre;
+    direccion = pDireccion;
+    telefono = pTelefono;
+    cedula = pCedula;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+  public String toString(){
+    String msj = "";
+    msj += "Nombre: " + nombre + "\n";
+    msj += "Direccion: " + direccion + "\n";
+    msj += "Telefono: " + telefono + "\n";
+    msj += "Cedula: " + cedula + "\n";
+    return msj; 
   }
 }

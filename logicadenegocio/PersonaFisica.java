@@ -1,35 +1,25 @@
 package logicadenegocio;
 
-
-/**
- * Write a description of class PersonaFisica here.
+/***
+ * Clase PersonaFisica
  * 
- * @author (your name) 
- * @version (a version number or a date)
  */
-public class PersonaFisica
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class PersonaFisica
-   */
-  public PersonaFisica()
-  {
-    // initialise instance variables
-    x = 0;
+public class PersonaFisica extends Cliente {
+  private String email;
+  private String ocupacion;
+
+  PersonaFisica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail, String pOcupacion) {
+    super(pNombre, pDireccion, pTelefono, pCedula);
+    email = pEmail;
+    ocupacion = pOcupacion;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += super.toString();
+    msj += "Email: " + email + "\n";
+    msj += "Ocupacion: " + ocupacion + "\n";
+    return msj;
   }
+
 }

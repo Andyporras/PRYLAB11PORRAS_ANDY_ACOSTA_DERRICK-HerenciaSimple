@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.target=Mensaje
 comment0.text=\r\n\ Es\ lo\ que\ contiene,\ detalles\r\n\ \r\n\ @author\ Derrick\ Acosta\r\n\ @version\ 03/04/2022\r\n
-comment1.params=
-comment1.target=Mensaje()
-numComments=2
+comment1.params=pFechaVigencia\ pDetalle
+comment1.target=Mensaje(java.util.Date,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

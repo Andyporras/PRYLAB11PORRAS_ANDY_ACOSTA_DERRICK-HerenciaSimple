@@ -1,35 +1,27 @@
 package logicadenegocio;
 
-
 /**
- * Write a description of class PersonaJuridica here.
+ * Clase PersonaJuridica
  * 
- * @author (your name) 
- * @version (a version number or a date)
  */
-public class PersonaJuridica
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class PersonaJuridica
-   */
-  public PersonaJuridica()
-  {
-    // initialise instance variables
-    x = 0;
+public class PersonaJuridica extends Cliente {
+  private String email;
+  private String razonSocial;
+  private int cuentaPorPagar;
+
+  PersonaFisica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail, String pRazonSocial, int pCuentaPorPagar) {
+    super(pNombre, pDireccion, pTelefono, pCedula);
+    email = pEmail;
+    razonSocial = pRazonSocial;
+    cuentaPorPagar = pCuentaPorPagar;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += super.toString();
+    msj += "Email: " + email + "\n";
+    msj += "Razon Social: " + razonSocial + "\n";
+    msj += "Cuenta por pagar: " + cuentaPorPagar + "\n";
+    return msj;
   }
 }

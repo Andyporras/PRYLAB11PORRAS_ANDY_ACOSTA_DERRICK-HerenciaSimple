@@ -1,35 +1,28 @@
 package logicadenegocio;
 
-
 /**
- * Write a description of class Cajero here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * clase cajero
  */
-public class Cajero
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class Cajero
-   */
-  public Cajero()
-  {
-    // initialise instance variables
-    x = 0;
+public class Cajero extends Empleado {
+  private Factura factura;
+  private int antiguedad;
+  private int anosLaborados;
+  private int montoAnual;
+
+  Cajero(String pNombre, int pSalarioBase, int pPlusSalarial, int pAntiguedad, int pAnosLaborados, int pMontoAnual) {
+    super(pNombre, pSalarioBase, pPlusSalarial);
+    antiguedad = pAntiguedad;
+    anosLaborados = pAnosLaborados;
+    montoAnual = pMontoAnual;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += super.toString();
+    msj += "Antiguedad: " + antiguedad + "\n";
+    msj += "Anos Laborados: " + anosLaborados + "\n";
+    msj += "Monto Anual: " + montoAnual + "\n";
+    return msj;
   }
+
 }

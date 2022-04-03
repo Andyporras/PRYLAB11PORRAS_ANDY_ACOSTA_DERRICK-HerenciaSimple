@@ -1,35 +1,28 @@
 package logicadenegocio;
 
+public class Item {
+  private int cantidad;
+  private String descripcion;
+  private double precioFinal;
+  private int garantia;
 
-/**
- * Write a description of class Item here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Item
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class Item
-   */
-  public Item()
-  {
-    // initialise instance variables
-    x = 0;
+  Item(int pCantidad, String pDescricion, double pPrecioFinal, int pGarantia) {
+    cantidad = pCantidad;
+    descripcion = pDescricion;
+    precioFinal = pPrecioFinal;
+    garantia = pGarantia;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += "Cantidad: " + cantidad + "\n";
+    msj += "Descripcion: " + descripcion + "\n";
+    msj += "Precio Final: " + precioFinal + "\n";
+    msj += "Garantia: " + garantia + "\n";
+    return msj;
+  }
+
+  public double getPrecioFinal() {
+    return precioFinal;
   }
 }

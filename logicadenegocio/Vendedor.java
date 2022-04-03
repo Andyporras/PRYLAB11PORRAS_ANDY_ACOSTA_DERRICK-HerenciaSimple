@@ -1,35 +1,21 @@
 package logicadenegocio;
 
-
 /**
- * Write a description of class Vendedor here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * clase vendedor
  */
-public class Vendedor
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class Vendedor
-   */
-  public Vendedor()
-  {
-    // initialise instance variables
-    x = 0;
+public class Vendedor extends Empleado {
+  private int comision;
+
+  Vendedor(String pNombre, int pSalarioBase, int pPlusSalarial, int pComision) {
+    super(pNombre, pSalarioBase, pPlusSalarial);
+    comision = pComision;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += super.toString();
+    msj += "Comision: " + comision + "\n";
+    return msj;
   }
+
 }
