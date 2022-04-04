@@ -7,8 +7,8 @@ package logicadenegocio;
 public class Tecnico extends Empleado {
   private int horasExtra;
 
-  Tecnico(String pNombre, int pSalarioBase, int pPlusSalarial, int pHorasExtra) {
-    super(pNombre, pSalarioBase, pPlusSalarial);
+  Tecnico(String pNombre, int pSalarioBase, int pHorasExtra) {
+    super(pNombre, pSalarioBase);
     horasExtra = pHorasExtra;
   }
 
@@ -17,6 +17,13 @@ public class Tecnico extends Empleado {
     msj += super.toString();
     msj += "Horas Extra: " + horasExtra + "\n";
     return msj;
+  }
+
+  @Override
+  public double calcularPlusSalarial() {
+    double plusSalarial = 0;
+    plusSalarial = horasExtra * 0.5;
+    return plusSalarial;
   }
 
 }

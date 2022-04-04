@@ -9,8 +9,8 @@ public class Cajero extends Empleado {
   private int anosLaborados;
   private int montoAnual;
 
-  Cajero(String pNombre, int pSalarioBase, int pPlusSalarial, int pAntiguedad, int pAnosLaborados, int pMontoAnual) {
-    super(pNombre, pSalarioBase, pPlusSalarial);
+  Cajero(String pNombre, int pSalarioBase, int pAntiguedad, int pAnosLaborados, int pMontoAnual) {
+    super(pNombre, pSalarioBase);
     antiguedad = pAntiguedad;
     anosLaborados = pAnosLaborados;
     montoAnual = pMontoAnual;
@@ -23,6 +23,13 @@ public class Cajero extends Empleado {
     msj += "Anos Laborados: " + anosLaborados + "\n";
     msj += "Monto Anual: " + montoAnual + "\n";
     return msj;
+  }
+
+  @Override
+  public double calcularPlusSalarial() {
+    double plusSalarial = 0;
+    plusSalarial = (anosLaborados * 0.05) + (montoAnual * 0.02);
+    return plusSalarial;
   }
 
 }

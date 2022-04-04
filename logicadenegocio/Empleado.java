@@ -3,16 +3,21 @@ package logicadenegocio;
 /**
  * clase Empleado
  */
-public class Empleado {
+public abstract class Empleado {
   private String nombre;
   private int salarioBase;
   private int plusSalarial;
 
-  Empleado(String pNombre, int pSalarioBase, int pPlusSalarial) {
+  Empleado(String pNombre, int pSalarioBase) {
     nombre = pNombre;
     salarioBase = pSalarioBase;
-    plusSalarial = pPlusSalarial;
   }
+
+  public int getSalarioBase() {
+    return salarioBase;
+  }
+
+  public abstract double calcularPlusSalarial();
 
   public String toString() {
     String msj = "";
