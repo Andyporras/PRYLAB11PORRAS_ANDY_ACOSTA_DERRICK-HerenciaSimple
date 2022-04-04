@@ -4,8 +4,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import javax.sound.sampled.Line;
-
 /**
  * Esta es la clase de la factura va tener los detalles de la compra
  * 

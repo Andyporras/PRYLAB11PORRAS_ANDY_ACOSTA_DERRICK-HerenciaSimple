@@ -1,35 +1,20 @@
 package logicadenegocio;
 
+public class Articulo extends Item {
+  private String marca;
+  private int numeroSerie;
 
-/**
- * Write a description of class Articulo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Articulo
-{
-  // instance variables - replace the example below with your own
-  private int x;
-  
-  /**
-   * Constructor for objects of class Articulo
-   */
-  public Articulo()
-  {
-    // initialise instance variables
-    x = 0;
+  Articulo(int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia, String pMarca, int pNumeroSerie) {
+    super(pCantidad, pDescricion, pPrecioFinal, pGarantia);
+    marca = pMarca;
+    numeroSerie = pNumeroSerie;
   }
-  
-  /**
-   * An example of a method - replace this comment with your own
-   * 
-   * @param  y   a sample parameter for a method
-   * @return     the sum of x and y 
-   */
-  public int sampleMethod(int y)
-  {
-    // put your code here
-    return x + y;
+
+  public String toString() {
+    String msj = "";
+    msj += super.toString();
+    msj += "Marca: " + marca + "\n";
+    msj += "Numero de serie: " + numeroSerie + "\n";
+    return msj;
   }
 }

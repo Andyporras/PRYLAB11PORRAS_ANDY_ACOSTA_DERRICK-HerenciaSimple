@@ -9,7 +9,8 @@ public class PersonaJuridica extends Cliente {
   private String razonSocial;
   private int cuentaPorPagar;
 
-  PersonaFisica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail, String pRazonSocial, int pCuentaPorPagar) {
+  PersonaJuridica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail,
+      String pRazonSocial, int pCuentaPorPagar) {
     super(pNombre, pDireccion, pTelefono, pCedula);
     email = pEmail;
     razonSocial = pRazonSocial;
