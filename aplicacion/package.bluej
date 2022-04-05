@@ -1,15 +1,18 @@
 #BlueJ package file
+dependency1.from=aplAplicacion
+dependency1.to=AppAplicacion
+dependency1.type=UsesDependency
 objectbench.height=94
 objectbench.width=761
 package.divider.horizontal=0.6
 package.divider.vertical=0.7994417862838915
 package.editor.height=395
 package.editor.width=647
-package.editor.x=140
+package.editor.x=159
 package.editor.y=40
 package.frame.height=600
 package.frame.width=800
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true

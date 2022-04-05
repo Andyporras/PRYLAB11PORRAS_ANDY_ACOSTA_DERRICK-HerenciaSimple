@@ -12,8 +12,7 @@ public class AppAplicacion {
     private ArrayList<Empleado> empleados;
     private ArrayList<Empleado> vendedores;
     private ArrayList<Factura> facturas;
-    private ArrayList<Cliente> personaFisica;
-    private ArrayList<Cliente> personaJuridica;
+
     private ArrayList<Empleado> cajeros;
     private Publicidad publicidad;
     private ArrayList<Cliente> clientes;
@@ -25,8 +24,6 @@ public class AppAplicacion {
         telefono = pTelefono;
         vendedores = new ArrayList<Empleado>();
         facturas = new ArrayList<Factura>();
-        personaFisica = new ArrayList<Cliente>();
-        personaJuridica = new ArrayList<Cliente>();
         cajeros = new ArrayList<Empleado>();
         publicidad = new Publicidad();
         clientes = new ArrayList<Cliente>();
@@ -65,7 +62,8 @@ public class AppAplicacion {
         if (cajeros.size() > 0 && vendedores.size() > 0) {
             facturas.add(
                     new FacturaContado(nombre, cedulaJuridica, direccion, telefono, cajeros.get(0), vendedores.get(0),
-                            pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca));
+                            clientes.get(0), pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca));
+
         }
 
     }
@@ -75,7 +73,8 @@ public class AppAplicacion {
             Double pPrecioFinal, int pGarantia, String pMarca) {
         if (cajeros.size() > 0 && vendedores.size() > 0) {
             facturas.add(new FacturaCredito(nombre, cedulaJuridica, direccion, telefono, cajeros.get(0),
-                    vendedores.get(0), pCantidadMeses, pInteresMensual, pCuotaMensual, pCantidad, pDescricion,
+                    vendedores.get(0), clientes.get(0), pCantidadMeses, pInteresMensual, pCuotaMensual, pCantidad,
+                    pDescricion,
                     pPrecioFinal, pGarantia, pMarca));
         }
     }

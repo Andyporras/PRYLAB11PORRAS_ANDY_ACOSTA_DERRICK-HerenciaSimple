@@ -1,10 +1,9 @@
 #BlueJ class context
 comment0.target=FacturaContado
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ FacturaContado\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=FacturaContado()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ FacturaContado\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=3
+comment1.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pCodigoTecnico\ pMantenimientoOReparacion
+comment1.target=FacturaContado(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment2.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pMarca
+comment2.target=FacturaContado(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ java.lang.String,\ java.lang.Double,\ int,\ java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

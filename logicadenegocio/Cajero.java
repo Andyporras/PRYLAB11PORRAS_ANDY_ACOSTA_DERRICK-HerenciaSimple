@@ -4,7 +4,6 @@ package logicadenegocio;
  * clase cajero
  */
 public class Cajero extends Empleado {
-  private Factura factura;
   private int antiguedad;
   private int anosLaborados;
   private int montoAnual;

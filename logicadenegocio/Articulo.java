@@ -15,8 +15,8 @@ public class Articulo extends Item {
   public String toString() {
     String msj = "";
     msj += super.toString();
-    msj += "Marca: " + marca + "\n";
-    msj += "Numero de serie: " + numeroSerie + "\n";
+    msj += "\tMarca: " + marca + "  ";
+    msj += " Numero de serie: " + numeroSerie + "\n";
     return msj;
   }
 }

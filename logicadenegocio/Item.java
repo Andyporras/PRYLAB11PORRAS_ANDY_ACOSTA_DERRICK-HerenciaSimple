@@ -15,10 +15,9 @@ public class Item {
 
   public String toString() {
     String msj = "";
-    msj += "Cantidad: " + cantidad + "\n";
-    msj += "Descripcion: " + descripcion + "\n";
-    msj += "Precio Final: " + precioFinal + "\n";
-    msj += "Garantia: " + garantia + "\n";
+    msj += " " + cantidad + "\t";
+    msj += " " + descripcion + "\t";
+    msj += " " + precioFinal + "\t";
     return msj;
   }
 

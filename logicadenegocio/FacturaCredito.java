@@ -13,9 +13,10 @@ public class FacturaCredito extends Factura {
   private double subTotal;
 
   public FacturaCredito(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono, Empleado pCajero,
-      Empleado pVendedor, int pCantidadMeses, double pInteresMensual,
+      Empleado pVendedor, Cliente pCliente, int pCantidadMeses, double pInteresMensual,
       double pCuotaMensual, int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia, String pMarca) {
-    super(pNombre, pCedulaJuridica, pDireccion, pTelefono, pCajero, pVendedor, pCantidad, pDescricion, pPrecioFinal,
+    super(pNombre, pCedulaJuridica, pDireccion, pTelefono, pCajero, pVendedor, pCliente, pCantidad, pDescricion,
+        pPrecioFinal,
         pGarantia, pMarca);
     cantidadMeses = pCantidadMeses;
     interesMensual = pInteresMensual;
@@ -24,10 +25,11 @@ public class FacturaCredito extends Factura {
   }
 
   public FacturaCredito(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono, Empleado pCajero,
-      Empleado pVendedor, int pCantidadMeses, double pInteresMensual,
+      Empleado pVendedor, Cliente pCliente, int pCantidadMeses, double pInteresMensual,
       double pCuotaMensual, int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia, int pCodigoTecnico,
       int pMantenimientoOReparacion) {
-    super(pNombre, pCedulaJuridica, pDireccion, pTelefono, pCajero, pVendedor, pCantidad, pDescricion, pPrecioFinal,
+    super(pNombre, pCedulaJuridica, pDireccion, pTelefono, pCajero, pVendedor, pCliente, pCantidad, pDescricion,
+        pPrecioFinal,
         pGarantia, pCodigoTecnico, pMantenimientoOReparacion);
     cantidadMeses = pCantidadMeses;
     interesMensual = pInteresMensual;
@@ -41,7 +43,6 @@ public class FacturaCredito extends Factura {
     msj += "Cantidad de meses: " + cantidadMeses + "\n";
     msj += "Interes mensual: " + interesMensual + "\n";
     msj += "Cuota mensual: " + cuotaMensual + "\n";
-    msj += "Subtotal: " + subTotal + "\n";
     return msj;
   }
 

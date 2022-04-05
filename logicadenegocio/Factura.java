@@ -21,12 +21,16 @@ public class Factura {
   private int numeroFactura;
   private Mensaje anuncio;
   private ArrayList<LineaDetalle> lineaDetalle;
+  private Empleado cajero;
+  private Empleado vendedor;
+  private Cliente cliente;
 
   /**
    * Constructor for objects of class Factura
    */
   public Factura(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono,
-      Empleado pCajero, Empleado pVendedor, int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia,
+      Empleado pCajero, Empleado pVendedor, Cliente pCliente, int pCantidad, String pDescricion, int pPrecioFinal,
+      int pGarantia,
       int pCodigoTecnico, int pMantenimientoOReparacion) {
     lineaDetalle = new ArrayList<LineaDetalle>();
     lineaDetalle.add(new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pCodigoTecnico,
@@ -39,14 +43,17 @@ public class Factura {
     setHoraFactura();
     catidadFactura++;
     numeroFactura = catidadFactura;
-
+    cajero = pCajero;
+    vendedor = pVendedor;
+    cliente = pCliente;
   }
 
   /**
    * Constructor for objects of class Factura
    */
   public Factura(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono,
-      Empleado pCajero, Empleado pVendedor, int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia,
+      Empleado pCajero, Empleado pVendedor, Cliente pCliente, int pCantidad, String pDescricion, Double pPrecioFinal,
+      int pGarantia,
       String pMarca) {
     lineaDetalle = new ArrayList<LineaDetalle>();
     lineaDetalle.add(new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca));
@@ -58,6 +65,9 @@ public class Factura {
     setHoraFactura();
     catidadFactura++;
     numeroFactura = catidadFactura;
+    cajero = pCajero;
+    vendedor = pVendedor;
+    cliente = pCliente;
 
   }
 
@@ -122,16 +132,25 @@ public class Factura {
 
   public String toString() {
     String msj = "";
-    msj += "Nombre: " + nombre + "\n";
-    msj += "Cedula Juridica: " + cedulaJuridica + "\n";
-    msj += "Direccion: " + direccion + "\n";
-    msj += "Telefono: " + telefono + "\n";
-    msj += "Fecha Factura: " + getFechar() + "\n";
-    msj += "Hora Factura: " + horaFactura + "\n";
-    msj += "Numero Factura: " + numeroFactura + "\n";
-    msj += "SubTotal: " + calcularSubTotal() + "\n";
-    msj += "Impuesto Venta: " + calcularImpuestoVenta() + "\n";
-    msj += "Total: " + calcularTotal() + "\n";
+    msj += "\t\t\t" + nombre + "\n";
+    msj += "\t\tCedula Juridica: " + cedulaJuridica + "\n";
+    msj += "\t\tDireccion: " + direccion + "\n";
+    msj += "\t\tTelefono: " + telefono + "\n";
+    msj += "Fecha Factura: " + getFechar();
+    msj += " Hora: " + horaFactura + "\n\n";
+    msj += "Numero de Factura: " + numeroFactura + "\n";
+    msj += "Vendedor: V" + vendedor.getNumeroEmpleado() + "  " + vendedor.getNombre() + "\n";
+    msj += "Cajero: C" + cajero.getNumeroEmpleado() + "  " + cajero.getNombre() + "\n";
+    msj += "Cliente: " + cliente.toString() + "\n\n";
+    msj += "Detalle de la Factura:\n";
+    msj += "Cantidad\tDescripcion\tprecio\n";
+    for (LineaDetalle linea : lineaDetalle) {
+      msj += linea.toString();
+    }
+    msj += "\t\t\tSubtotal: " + calcularSubTotal() + "\n";
+    msj += "\t\t\tImpuesto: " + calcularImpuestoVenta() + "\n";
+    msj += "\t\t\tTotal: " + calcularTotal() + "\n\n";
+    msj += "Anuncio: " + anuncio.toString();
     return msj;
   }
 

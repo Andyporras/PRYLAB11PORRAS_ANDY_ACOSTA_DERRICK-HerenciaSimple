@@ -14,7 +14,7 @@ public class Servicio extends Item {
   public String toString() {
     String msj = "";
     msj += super.toString();
-    msj += "Codigo tecnico: " + codigoTecnico + "\n";
+    msj += "\tCodigo tecnico: " + codigoTecnico + "  ";
     msj += "Mantenimiento o reparacion: " + mantenimientoOReparacion + "\n";
     return msj;
   }

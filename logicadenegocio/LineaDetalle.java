@@ -5,10 +5,10 @@ public class LineaDetalle {
   private Item item;
   private int cantidad;
 
-  LineaDetalle(int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia, String pMarca){
+  LineaDetalle(int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia, String pMarca) {
     cantidadItems++;
     cantidad = cantidadItems;
-    item = new Articulo(pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca); 
+    item = new Articulo(pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca);
   }
 
   LineaDetalle(int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia, int pCodigoTecnico,

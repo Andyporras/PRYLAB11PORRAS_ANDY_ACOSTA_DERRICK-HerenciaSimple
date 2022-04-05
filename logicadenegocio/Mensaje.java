@@ -34,7 +34,7 @@ public class Mensaje {
 
   public String toString() {
     String msj = "";
-    msj += "Fecha vigelancia: " + fechaVigelancia + "\n";
+    msj += "Fecha vigelancia: " + getFecha() + "\n";
     msj += "Detalle: " + detalle + "\n";
     return msj;
   }
