@@ -15,16 +15,41 @@ public class Factura {
   private String nombre;
   private String cedulaJuridica;
   private String direccion;
-  private int telefono;
+  private String telefono;
   private Date fechaFactura;
   private Date horaFactura;
   private int numeroFactura;
   private Mensaje anuncio;
   private ArrayList<LineaDetalle> lineaDetalle;
 
-  public Factura(String pNombre, String pCedulaJuridica, String pDireccion, int pTelefono,
-      Empleado pCajero, Empleado pVendedor) {
+  /**
+   * Constructor for objects of class Factura
+   */
+  public Factura(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono,
+      Empleado pCajero, Empleado pVendedor, int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia,
+      int pCodigoTecnico, int pMantenimientoOReparacion) {
     lineaDetalle = new ArrayList<LineaDetalle>();
+    lineaDetalle.add(new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pCodigoTecnico,
+        pMantenimientoOReparacion));
+    nombre = pNombre;
+    cedulaJuridica = pCedulaJuridica;
+    direccion = pDireccion;
+    telefono = pTelefono;
+    setFechaFactura();
+    setHoraFactura();
+    catidadFactura++;
+    numeroFactura = catidadFactura;
+
+  }
+
+  /**
+   * Constructor for objects of class Factura
+   */
+  public Factura(String pNombre, String pCedulaJuridica, String pDireccion, String pTelefono,
+      Empleado pCajero, Empleado pVendedor, int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia,
+      String pMarca) {
+    lineaDetalle = new ArrayList<LineaDetalle>();
+    lineaDetalle.add(new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca));
     nombre = pNombre;
     cedulaJuridica = pCedulaJuridica;
     direccion = pDireccion;
@@ -71,6 +96,17 @@ public class Factura {
     return total;
   }
 
+  public void agregarItem(int pCantidad, String pDescricion, Double pPrecioFinal, int pGarantia, String pMarca) {
+    lineaDetalle.add(new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pMarca));
+  }
+
+  public void agregarItem(int pCantidad, String pDescricion, int pPrecioFinal, int pGarantia, int pCodigoTecnico,
+      int pMantenimientoOReparacion) {
+    lineaDetalle.add(
+        new LineaDetalle(pCantidad, pDescricion, pPrecioFinal, pGarantia, pCodigoTecnico, pMantenimientoOReparacion));
+
+  }
+
   public void agregarAnuncio(Mensaje pAnuncio) {
     anuncio = pAnuncio;
   }
@@ -78,6 +114,10 @@ public class Factura {
   public String getFechar() {
     SimpleDateFormat mascara = new SimpleDateFormat("dd/MM/yy");
     return mascara.format(fechaFactura);
+  }
+
+  public int getNumFactura() {
+    return numeroFactura;
   }
 
   public String toString() {

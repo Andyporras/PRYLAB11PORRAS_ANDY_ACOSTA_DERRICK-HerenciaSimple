@@ -6,7 +6,7 @@ package logicadenegocio;
 public class Vendedor extends Empleado {
   private int comision;
 
-  Vendedor(String pNombre, int pSalarioBase, int pComision) {
+  public Vendedor(String pNombre, int pSalarioBase, int pComision) {
     super(pNombre, pSalarioBase);
     comision = pComision;
   }

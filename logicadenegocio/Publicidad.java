@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Publicidad {
   private ArrayList<Mensaje> mensajes;
 
-  Publicidad() {
+  public Publicidad() {
     mensajes = new ArrayList<Mensaje>();
   }
 
@@ -13,6 +13,9 @@ public class Publicidad {
     mensajes.add(new Mensaje(pFechaVigencia, pDetalle));
   }
 
+  public ArrayList<Mensaje> getMensajes() {
+    return mensajes;
+  }
   public String toString() {
     String msj = "";
     for (Mensaje mensaje : mensajes) {

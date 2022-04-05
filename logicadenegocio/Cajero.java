@@ -9,7 +9,7 @@ public class Cajero extends Empleado {
   private int anosLaborados;
   private int montoAnual;
 
-  Cajero(String pNombre, int pSalarioBase, int pAntiguedad, int pAnosLaborados, int pMontoAnual) {
+  public Cajero(String pNombre, int pSalarioBase, int pAntiguedad, int pAnosLaborados, int pMontoAnual) {
     super(pNombre, pSalarioBase);
     antiguedad = pAntiguedad;
     anosLaborados = pAnosLaborados;

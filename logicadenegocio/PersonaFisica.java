@@ -8,7 +8,7 @@ public class PersonaFisica extends Cliente {
   private String email;
   private String ocupacion;
 
-  PersonaFisica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail, String pOcupacion) {
+  public PersonaFisica(String pNombre, String pDireccion, String pTelefono, String pCedula, String pEmail, String pOcupacion) {
     super(pNombre, pDireccion, pTelefono, pCedula);
     email = pEmail;
     ocupacion = pOcupacion;
