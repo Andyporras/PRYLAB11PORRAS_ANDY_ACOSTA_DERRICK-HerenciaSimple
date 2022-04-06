@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=Servicio
+comment0.text=\r\n\ Clase\ Servicio\ del\ servicio\ a\ ofrecer\r\n\ @author\ Andy\ Porras\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pCodigoTecnico\ pMantenimientoOReparacion
 comment1.target=Servicio(int,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ servicio\r\n\ @param\ pCantidad\ la\ cantidad\ \r\n\ @param\ pDescricion\ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ garant\u00EDa\r\n\ @param\ pCodigoTecnico\ el\ codigo\ del\ tecnico\r\n\ @param\ pMantenimientoOReparacion\ el\ mantenimiento\ o\ la\ reparacion\r\n
 comment2.params=
 comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 numComments=3

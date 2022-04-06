@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=FacturaCredito
-comment0.text=\r\n\ \r\n\ @author\r\n\ @version\r\n
+comment0.text=\r\n\ Clase\ FacturaCredito\r\n\ @author\ Andy\ Porras\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidadMeses\ pInteresMensual\ pCuotaMensual\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pMarca
 comment1.target=FacturaCredito(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ double,\ double,\ int,\ java.lang.String,\ java.lang.Double,\ int,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ FacturaCredito\ \r\n\ @param\ pNombre\ el\ nombre\ de\ la\ factura\r\n\ @param\ pCedulaJuridica\ la\ cedula\ juridica\ \r\n\ @param\ pDireccion\ la\ direccion\r\n\ @param\ pTelefono\ el\ telefono\r\n\ @param\ pCajero\ el\ cajero\r\n\ @param\ pVendedor\ el\ vendedor\r\n\ @param\ pCliente\ el\ cliente\r\n\ @param\ pCantidadMeses\ la\ cantidad\ de\ meses\r\n\ @param\ pInteresMensual\ el\ interes\ mensual\r\n\ @param\ \ pCuotaMensual\ la\ cuota\ mensual\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descipcion\ \r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ garantia\ \r\n\ @param\ pMarca\ la\ marca\r\n
 comment2.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidadMeses\ pInteresMensual\ pCuotaMensual\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pCodigoTecnico\ pMantenimientoOReparacion
 comment2.target=FacturaCredito(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ double,\ double,\ int,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment2.text=\r\n\ Constructor\ de\ FacturaCredito\ \r\n\ @param\ pNombre\ el\ nombre\ de\ la\ factura\r\n\ @param\ pCedulaJuridica\ la\ cedula\ juridica\ \r\n\ @param\ pDireccion\ la\ direccion\r\n\ @param\ pTelefono\ el\ telefono\r\n\ @param\ pCajero\ el\ cajero\r\n\ @param\ pVendedor\ el\ vendedor\r\n\ @param\ pCliente\ el\ cliente\r\n\ @param\ pCantidadMeses\ la\ cantidad\ de\ meses\r\n\ @param\ pInteresMensual\ el\ interes\ mensual\r\n\ @param\ \ pCuotaMensual\ la\ cuota\ mensual\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descipcion\ \r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ garantia\ \r\n\ @param\ pCodigoTecnico\ el\ codigo\ del\ tecnico\r\n\ @param\ pMantenimientoOReparacion\ el\ mantenimiento\ o\ la\ reparacion\r\n
 comment3.params=
 comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 numComments=4

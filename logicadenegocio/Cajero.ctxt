@@ -1,10 +1,13 @@
 #BlueJ class context
 comment0.target=Cajero
-comment0.text=\r\n\ clase\ cajero\r\n
+comment0.text=\r\n\ clase\ cajero\r\n\ @author\ Andy\ Porras\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pNombre\ pSalarioBase\ pAntiguedad\ pAnosLaborados\ pMontoAnual
 comment1.target=Cajero(java.lang.String,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Cajero\r\n\ @param\ pNombre\ el\ nombre\ del\ cajero\r\n\ @param\ pSalarioBase\ el\ salario\ base\r\n\ @param\ pAntiguedad\ la\ antiguedad\ del\ cajero\ trabajando\r\n\ @param\ pAnosLaborados\ los\ a\u00F1os\ del\ cajero\ laborados\r\n\ @param\ pMontoAnual\ el\ monto\ anual\ que\ recibe\ el\ cajero\r\n\ \r\n
 comment2.params=
 comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 comment3.params=
 comment3.target=double\ calcularPlusSalarial()
+comment3.text=\r\n\ metodo\ que\ calcula\ el\ plus\ salarial\ del\ cajero\r\n\ @return\ plusSalarial\ el\ plus\ salarial\ del\ cajero\r\n
 numComments=4

@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=FacturaContado
+comment0.text=\r\n\ Clase\ FacturaConstado\r\n\ @author\ Derrick\ Acosta\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pCodigoTecnico\ pMantenimientoOReparacion
 comment1.target=FacturaContado(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ FacturaContado\r\n\ @param\ pNombre\ el\ nombre\ de\ la\ factura\r\n\ @param\ pCedulaJuridica\ la\ cedula\ juridica\ \r\n\ @param\ pDireccion\ la\ direccion\r\n\ @param\ pTelefono\ el\ telefono\r\n\ @param\ pCajero\ el\ cajero\r\n\ @param\ pVendedor\ el\ vendedor\r\n\ @param\ pCliente\ el\ cliente\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ grantia\ \r\n\ @param\ pCodigoTecnico\ el\ codigo\ del\ tecnico\r\n\ @param\ pMantenimientoOReparacion\ el\ mantenimiento\ o\ la\ reparacion\r\n
 comment2.params=pNombre\ pCedulaJuridica\ pDireccion\ pTelefono\ pCajero\ pVendedor\ pCliente\ pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pMarca
 comment2.target=FacturaContado(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ Empleado,\ Empleado,\ Cliente,\ int,\ java.lang.String,\ java.lang.Double,\ int,\ java.lang.String)
+comment2.text=\r\n\ Constructor\ de\ la\ clase\ FacturaContado\r\n\ @param\ pNombre\ el\ nombre\ de\ la\ factura\r\n\ @param\ pCedulaJuridica\ la\ cedula\ juridica\ \r\n\ @param\ pDireccion\ la\ direccion\r\n\ @param\ pTelefono\ el\ telefono\r\n\ @param\ pCajero\ el\ cajero\r\n\ @param\ pVendedor\ el\ vendedor\r\n\ @param\ pCliente\ el\ cliente\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ grantia\r\n\ @param\ pMarca\ la\ marca\r\n
 comment3.params=
 comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 numComments=4

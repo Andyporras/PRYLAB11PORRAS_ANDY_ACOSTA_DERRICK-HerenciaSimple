@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=PersonaFisica
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ PersonaFisica\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=PersonaFisica()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ PersonaFisica\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
+comment0.text=\r\n\ Clase\ PersonaFisica\r\n\ @author\ Andy\ Porras\r\n\ @version\ abril\ 2022\r\n
+comment1.params=pNombre\ pDireccion\ pTelefono\ pCedula\ pEmail\ pOcupacion
+comment1.target=PersonaFisica(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Construcctor\ de\ PersonaFisica\r\n\ @param\ pNombre\ el\ nombre\ de\ la\ persona\r\n\ @param\ pDireccion\ la\ direccion\ de\ la\ persona\r\n\ @param\ pTelefono\ el\ telefono\ de\ la\ persona\r\n\ @param\ pCedula\ la\ cedula\ de\ la\ persona\r\n\ @param\ pEmail\ el\ email\ de\ la\ persona\r\n\ @param\ pOcupacion\ la\ ocupacion\ de\ la\ persona\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 numComments=3

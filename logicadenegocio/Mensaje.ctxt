@@ -1,8 +1,16 @@
 #BlueJ class context
 comment0.target=Mensaje
-comment0.text=\r\n\ Es\ lo\ que\ contiene,\ detalles\r\n\ \r\n\ @author\ Derrick\ Acosta\r\n\ @version\ 03/04/2022\r\n
+comment0.text=\r\n\ Clase\ Mensaje,\ representa\ un\ mensaje\r\n\ \r\n\ @author\ Andy\ Porras\r\n\ @version\ 03/04/2022\r\n
 comment1.params=pFechaVigencia\ pDetalle
-comment1.target=Mensaje(java.util.Date,\ java.lang.String)
-comment2.params=
-comment2.target=java.lang.String\ toString()
-numComments=3
+comment1.target=Mensaje(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Mensaje\r\n\ @param\ pFechaVigencia\ la\ fecha\ de\ vigencia\r\n\ @param\ pDetalle\ el\ detalle\ del\ mensaje\r\n
+comment2.params=pFechaVigencia
+comment2.target=void\ setFecha(java.lang.String)
+comment2.text=\r\n\ Metodo\ accesor\ para\ obtener\ la\ fecha\r\n\ @param\ pFechaVigencia\ el\ parametro\ para\ la\ fecha\ de\ vigencia\r\n
+comment3.params=
+comment3.target=java.lang.String\ getFecha()
+comment3.text=\r\n\ Metodo\ constructor\ para\ obtener\ la\ fecha\r\n\ @return\ mascara.format(fechaVigelancia)\ obtener\ la\ fecha\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
+numComments=5

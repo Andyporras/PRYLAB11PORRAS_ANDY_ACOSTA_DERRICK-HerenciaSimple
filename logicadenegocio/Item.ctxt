@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Item
+comment0.text=\r\n\ Clase\ Item\r\n\ @author\ Derrick\ Acosta\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pCantidad\ pDescricion\ pPrecioFinal\ pGarantia
 comment1.target=Item(int,\ java.lang.String,\ double,\ int)
+comment1.text=\r\n\ Construcctor\ Item\r\n\ @param\ pCantidad\ la\ cantidad\ del\ item\r\n\ @param\ pDescricion\ la\ descirpcion\ del\ item\r\n\ @param\ pPrecioFinal\ el\ precio\ final\ del\ item\r\n\ @param\ pGarantia\ la\ garantia\ del\ item\r\n
 comment2.params=
 comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 comment3.params=
 comment3.target=double\ getPrecioFinal()
+comment3.text=\r\n\ Metodo\ para\ obtener\ el\ precio\ final\r\n\ @return\ precioFinal\r\n
 numComments=4

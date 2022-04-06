@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Tecnico
+comment0.text=\r\n\ clase\ T\u00E9cnico\r\n\ @author\ Andy\ Porras\r\n\ @version\ abril\ 2022\r\n
+comment1.params=pNombre\ pSalarioBase\ pHorasExtra
+comment1.target=Tecnico(java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Clase\ constructor\ de\ Tecnico\r\n\ @param\ pNombre\ el\ nombre\ del\ tecnico\r\n\ @param\ pSalarioBase\ el\ salario\ base\ del\ tecnico\r\n\ @param\ pHorasExtra\ la\ hora\ extra\ del\ tecnico\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
+comment3.params=
+comment3.target=double\ calcularPlusSalarial()
+comment3.text=\r\n\ metodo\ que\ calcula\ el\ plus\ salarial\ del\ tecnico\r\n\ @return\ plusSalarial\ el\ plus\ salarial\ del\ tecnico\r\n
+numComments=4
