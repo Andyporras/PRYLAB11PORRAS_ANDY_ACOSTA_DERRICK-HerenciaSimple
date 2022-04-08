@@ -1,16 +1,16 @@
 #BlueJ class context
 comment0.target=LineaDetalle
-comment0.text=\r\n\ Clase\ LineaDetalle\ \r\n\ @author\ Derrick\ Acosta\r\n\ @version\ abril\ 2022\r\n
+comment0.text=\r\n\ Clase\ LineaDetalle\r\n\ \r\n\ @author\ Derrick\ Acosta\r\n\ @version\ abril\ 2022\r\n
 comment1.params=pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pMarca
 comment1.target=LineaDetalle(int,\ java.lang.String,\ java.lang.Double,\ int,\ java.lang.String)
-comment1.text=\r\n\ Constructor\ de\ LineaDetalle\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ garantia\r\n\ @param\ pMarca\ la\ marca\r\n
+comment1.text=\r\n\ Constructor\ de\ LineaDetalle\r\n\ \r\n\ @param\ pCantidad\ \ \ \ la\ cantidad\r\n\ @param\ pDescricion\ \ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ \ \ \ la\ garantia\r\n\ @param\ pMarca\ \ \ \ \ \ \ la\ marca\r\n
 comment2.params=pCantidad\ pDescricion\ pPrecioFinal\ pGarantia\ pCodigoTecnico\ pMantenimientoOReparacion
 comment2.target=LineaDetalle(int,\ java.lang.String,\ int,\ int,\ int,\ int)
-comment2.text=\r\n\ Constructor\ de\ LineaDetalle\r\n\ @param\ pCantidad\ la\ cantidad\r\n\ @param\ pDescricion\ la\ descripcion\r\n\ @param\ pPrecioFinal\ el\ precio\ final\r\n\ @param\ pGarantia\ la\ garantia\r\n\ @param\ pCodigoTecnico\ el\ codigo\ del\ tecnico\r\n
+comment2.text=\r\n\ Constructor\ de\ LineaDetalle\r\n\ \r\n\ @param\ pCantidad\ \ \ \ \ \ la\ cantidad\r\n\ @param\ pDescricion\ \ \ \ la\ descripcion\r\n\ @param\ pPrecioFinal\ \ \ el\ precio\ final\r\n\ @param\ pGarantia\ \ \ \ \ \ la\ garantia\r\n\ @param\ pCodigoTecnico\ el\ codigo\ del\ tecnico\r\n
 comment3.params=
 comment3.target=java.lang.String\ toString()
-comment3.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
+comment3.text=\r\n\ Metodo\ para\ representar\ el\ objeto\r\n\ \r\n\ @return\ msj\ la\ informacion\ del\ objeto\r\n
 comment4.params=
 comment4.target=double\ getPrecio()
-comment4.text=\r\n\ Metodo\ accesor\ para\ obtener\ el\ precio\r\n\ @return\ item.getPrecioFinal()\ el\ precio\r\n
+comment4.text=\r\n\ Metodo\ accesor\ para\ obtener\ el\ precio\r\n\ \r\n\ @return\ item.getPrecioFinal()\ el\ precio\r\n
 numComments=5

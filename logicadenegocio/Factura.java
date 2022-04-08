@@ -209,7 +209,7 @@ public class Factura {
     msj += "Numero de Factura: " + numeroFactura + "\n";
     msj += "Vendedor: V" + vendedor.getNumeroEmpleado() + "  " + vendedor.getNombre() + "\n";
     msj += "Cajero: C" + cajero.getNumeroEmpleado() + "  " + cajero.getNombre() + "\n";
-    msj += "Cliente: " + cliente.toString() + "\n\n";
+    msj += "" + cliente.toString() + "\n\n";
     msj += "Detalle de la Factura:\n";
     msj += "Cantidad\tDescripcion\tprecio\n";
     for (LineaDetalle linea : lineaDetalle) {

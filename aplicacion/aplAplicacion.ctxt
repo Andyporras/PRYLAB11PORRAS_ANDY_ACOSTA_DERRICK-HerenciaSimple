@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=aplAplicacion
-comment0.text=\r\n\ Clase\ donde\ creamos\ y\ agregamos\ informacion\ a\ los\ objetos\ para\ ver\ el\ funcionamiento\ correcto\ de\ los\ metodos\ de\ logicadenegocio\r\n
+comment0.text=\r\n\ Clase\ donde\ creamos\ y\ agregamos\ informacion\ a\ los\ objetos\ para\ ver\ el\r\n\ funcionamiento\ correcto\ de\ los\ metodos\ de\ logicadenegocio\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 numComments=2
